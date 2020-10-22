@@ -14,6 +14,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  
+  # デバック用のgemを追加
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'pry-doc'
 end
 
 group :development do
