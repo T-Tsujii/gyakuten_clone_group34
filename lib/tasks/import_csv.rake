@@ -1,2 +1,2 @@
-namespace :import_csv do
-end
+# import.rbの読み込み設定
+require 'import'
