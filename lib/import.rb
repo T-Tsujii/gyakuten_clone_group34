@@ -9,6 +9,7 @@ class Import
     list = []
     CSV.foreach(path, headers: true) { |row| list << row.to_h }
     list
+     
   end
 
 end
