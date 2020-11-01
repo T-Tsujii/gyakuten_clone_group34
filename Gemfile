@@ -12,7 +12,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
-gem 'webpacker', '~> 4.0'
 # 多言語対応化gemを追加
 gem 'devise-i18n'
 gem 'rails-i18n', '~> 6.0'
