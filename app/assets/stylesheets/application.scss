@@ -7,16 +7,6 @@
 
 header {
   color: white;
-
-  .navbar-brand {
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-  }
   
   a {
     color: white;
@@ -27,6 +17,18 @@ header {
       color: white;
       opacity: 0.7;
     }
+  }
+
+  .navbar-toggler {
+    color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.1);
+  }
+
+  @include media-breakpoint-down(lg)  {
+    .navbar-dark .navbar-toggler-icon {
+      display: inline-block;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }    
   }
 
   #navbarNav {
