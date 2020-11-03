@@ -5,8 +5,125 @@
 
 @import "bootstrap/scss/bootstrap";
 
+/* ページ全体の設定 */
 .base-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.main-color {
+  background-color: #5d99ff !important;
+}
+
+/* header */
+#navbarNav .nav .nav-item {
+  font-size: 0.8rem;
+  .nav-link {
+    padding: 0.5rem;
+  }
+}
+
+.navbar-custom {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* banner */
+.banner {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* footer */
+footer {
+  ul {
+    li {
+      font-size: 20px;
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* レスポンシブ*/
+
+@media screen and(min-width: (992px)) {
+  .main-wrapper {
+    width: 990px;
+    padding: 200px 0 80px 0;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p {
+      width: 710px;
+      margin: 0 auto;
+      font-size: 17px;
+      margin-bottom: 15px;
+      line-height: 2rem;
+    }
+
+    .table {
+      width: 710px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: (992px)) {
+  .base-container {
+    padding: 0;
+  }
+
+  #navbarNav {
+    flex-direction: column;
+  }
+
+  .main-wrapper {
+    width: 90%;
+    padding: 130px 0 80px 0;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 34px;
+      margin-bottom: 15px;
+      line-height: 4rem;
+    }
+
+    .table {
+      width: 710px;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+  }
+  footer {
+    ul {
+      li {
+        font-size: 32px;
+      }
+    }
+  }
 }
