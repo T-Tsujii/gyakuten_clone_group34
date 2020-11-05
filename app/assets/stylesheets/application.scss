@@ -3,39 +3,18 @@
  *= require_self
  */
 
-@import "bootstrap/scss/bootstrap";
+ @import "bootstrap/scss/bootstrap";
 
+body {
+  padding-top: 56px;
+}
 header {
-  color: white;
-  
-  a {
-    color: white;
-    font-size: small;
-    text-decoration: none;
-
-    &:hover {
-      color: white;
-      opacity: 0.7;
-    }
-  }
-
-  .navbar-toggler {
-    color: rgba(255,255,255,0.5);
-    border-color: rgba(255,255,255,0.1);
-  }
-
-  @include media-breakpoint-down(lg)  {
-    .navbar-dark .navbar-toggler-icon {
-      display: inline-block;
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }    
-  }
-
-  #navbarNav {
-    justify-content: center;
+  .header-nav {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
 
 .base-container {
   max-width: 1200px;

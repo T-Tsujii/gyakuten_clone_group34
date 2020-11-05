@@ -1,46 +1,47 @@
-<header class="fixed-top base-color bg-primary">
-  <div class="container">
-    <nav class="navbar navbar-fixed-top navbar-expand-lg nabvar-dark header-nav">
-
-      <%= link_to "やんばるCODE", '#', class: "navbar-brand" %>
-      <button class="navbar-toggler collapse" type="button" data-toggle="collapse" 
-      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+<header class="fixed-top bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark header-nav">
+    <%= link_to "やんばるCODE", '#', class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active dropdown">
+          <%= link_to "Rails", "#", class: "nav-link dropdown-toggle", id: "navbar-dropdown-rails", role: "button", data: { toggle: "dropdown"}, aria: { haspopup: true, expanded:false } %>
+          <div class="dropdown-menu" aria-labelledby="navbar-dropdown-rails">
+            <%= link_to "Ruby/Rails教材", "#", class: "dropdown-item" %>
+            <%= link_to "動画教材", root_path, class: "dropdown-item" %>
+            <%= link_to "AWS講座", "#", class: "dropdown-item" %>
+            <%= link_to "プログラミング勉強会", "#", class: "dropdown-item" %>
+            <%= link_to "質問集", "#", class: "dropdown-item" %>
+          </div>
+        </li>
+        <li class="nav-item"><%= link_to "対談", "#", class: "nav-link active" %></li>
+        <li class="nav-item"><%= link_to "動画編集講座", "#", class: "nav-link active" %></li>
+        <li class="nav-item"><%= link_to "ライティング講座", "#", class: "nav-link active" %></li>
+        <li class="nav-item"><%= link_to "マネタイズ講座", "#", class: "nav-link active" %></li>
+        <li class="nav-item active dropdown">
+          <%= link_to "PHP", "#", class: "nav-link dropdown-toggle", id: "navbar-dropdown-php", role: "button", data: { toggle: "dropdown"}, aria: { haspopup: true, expanded:false } %>
+          <div class="dropdown-menu" aria-labelledby="navbar-dropdown-php">
+            <%= link_to "PHPテキスト教材", "#", class: "dropdown-item" %>
+            <%= link_to "PHP動画教材", "#", class: "dropdown-item" %>
+          </div>
+        </li>
+        <li class="nav-item"><%= link_to "LINE@", "#", class: "nav-item nav-link active" %></li>
+        <% if user_signed_in? %>
           <li class="nav-item active dropdown">
-            <%= link_to "Rails", "#" ,class: "nav-link dropdown-toggle", id:"navbarDropdown" , 'data-toggle': :dropdown %>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to "Ruby/Rails教材", "#", class:"dropdown-item" %>
-              <%= link_to "動画教材", "#", class:"dropdown-item" %>
-              <%= link_to "AWS講座", "#", class:"dropdown-item" %>
-              <%= link_to "プログラミング勉強会", "#", class:"dropdown-item" %>
-              <%= link_to "質問集", "#", class:"dropdown-item" %>
-            </div>
-            </li>
-          <li class="nav-item"><%= link_to "対談", "#", class: "nav-item nav-link active" %></li>
-          <li class="nav-item"><%= link_to "動画編集講座", "#", class: "nav-item nav-link active" %></li>
-          <li class="nav-item"><%= link_to "ライティング講座", "#", class: "nav-item nav-link active" %></li>
-          <li class="nav-item"><%= link_to "マネタイズ講座", "#", class: "nav-item nav-link active" %></li>
-          <li class="nav-item active dropdown">
-            <%= link_to "PHP", "#",class: "nav-link dropdown-toggle", id:"navbarDropdown", 'data-toggle': :dropdown %>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to "PHPテキスト教材", "#", class:"dropdown-item" %>
-              <%= link_to "PHP動画教材", "#", class:"dropdown-item" %>
+            <%= link_to "マイページ", "#", class: "nav-link dropdown-toggle", id: "navbar-dropdown-mypage", role: "button", data: { toggle: "dropdown"}, aria: { haspopup: true, expanded:false } %>
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-mypage">
+              <%= link_to "進捗管理", "#", class: "dropdown-item" %>
+              <%= link_to "アカウント編集", edit_user_registration_path, class: "dropdown-item" %>
             </div>
           </li>
-          <li class="nav-item"><%= link_to "LINE@", "#", class: "nav-item nav-link active" %></li>
-          
-          <% if user_signed_in? %>
-            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-item nav-link active"%></li>
-            <li><%= link_to "動画教材", root_path, class: "nav-item nav-link active" %></li>
-          <% else %>
-            <li><%= link_to "新規登録", new_user_registration_path, class: "nav-item nav-link active" %></li>
-            <li><%= link_to "ログイン", new_user_session_path, class: "nav-item nav-link active" %></li>
-          <% end %>
-        </ul>
-      </div>  
-    </nav>
-  </div>
+          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link active" %></li>
+        <% else %>
+          <li><%= link_to "新規登録", new_user_registration_path, class: "nav-link active" %></li>
+          <li><%= link_to "ログイン", new_user_session_path, class: "nav-link active" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
 </header>
