@@ -23,7 +23,7 @@
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#!">Ruby/Rails教材</a>
                 <a class="dropdown-item" href="#!">動画教材</a>
-                <%= link_to "AWS講座", root_path, class: "dropdown-item" %>
+                <%= link_to "AWS講座", aws_texts_path, class: "dropdown-item" %>
                 <a class="dropdown-item" href="#!">プログラミング勉強会</a>
                 <a class="dropdown-item" href="#!">質問集</a>
               </div>
@@ -44,7 +44,7 @@
               <a class="nav-link text-white" href="#!">マネタイズ講座</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link  text-white dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link text-white dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 PHP</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#!">PHPテキスト教材</a>
@@ -54,36 +54,45 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="#!">Line@</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#!">マイページ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#!">ログアウト</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <% if user_signed_in? %>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to "新規登録", new_user_registration_path %>
-        <%= link_to "ログイン", new_user_session_path %>
-      <% end %>
-    </header>
-    <main>
-      <div class="base-container">
-        <%= yield %>
+            <% if user_signed_in? %>
+              <li class="nav-item dropdown">
+                <%= link_to "マイページ", "#", class: "nav-link text-white dropdown-toggle",  'data-toggle': :dropdown, 'role': :button, 'aria-haspopup': :true,
+                'aria-expanded': :false %>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#!">進捗管理</a>
+                  <a class="dropdown-item" href="#!">アカウント編集</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログアウト", destroy_user_session_path, class: "nav-link text-white", method: :delete %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to "新規登録", new_user_registration_path, class: "nav-link text-white" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログイン", new_user_session_path, class: "nav-link text-white" %>
+              </li>
+            <% end %>
+          </li>
+        </ul>
       </div>
-    </main>
-    <footer class="main-color fixed-bottom">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">ブログ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Youtube</a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <div class="base-container">
+      <%= yield %>
+    </div>
+  </main>
+  <footer class="main-color fixed-bottom">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">ブログ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Youtube</a>
+      </li>
+    </ul>
+  </footer>
+</body>
 </html>
