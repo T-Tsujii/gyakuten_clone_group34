@@ -3,7 +3,7 @@
  *= require_self
  */
 
- @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 body {
   padding-top: 56px;
@@ -27,19 +27,6 @@ header {
   background-color: #5d99ff !important;
 }
 
-/* header */
-#navbarNav .nav .nav-item {
-  font-size: 0.8rem;
-  .nav-link {
-    padding: 0.5rem;
-  }
-}
-
-.navbar-custom {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 /* banner */
 .banner {
   margin: 0 auto;
@@ -53,18 +40,6 @@ header {
   padding: 5px;
   border: 1px solid black;
   border-radius: 5px;
-}
-
-/* footer */
-footer {
-  ul {
-    li {
-      font-size: 20px;
-      .nav-link:hover {
-        text-decoration: underline;
-      }
-    }
-  }
 }
 
 /* レスポンシブ*/
@@ -97,14 +72,6 @@ footer {
 }
 
 @media screen and (max-width: (992px)) {
-  .base-container {
-    padding: 0;
-  }
-
-  #navbarNav {
-    flex-direction: column;
-  }
-
   .main-wrapper {
     width: 90%;
     padding: 130px 0 80px 0;
@@ -128,13 +95,6 @@ footer {
       width: 710px;
       margin: 0 auto;
       font-size: 1.5rem;
-    }
-  }
-  footer {
-    ul {
-      li {
-        font-size: 32px;
-      }
     }
   }
 }
