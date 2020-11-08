@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <% @aws_texts.each do |aws_text| %>
+        <% @aws_texts.each.with_index(1) do |aws_text| %>
           <tr>
             <th><%= aws_text.id %></th>
             <td><a href="" target="_blank"><%= aws_text.title %></a></td>
