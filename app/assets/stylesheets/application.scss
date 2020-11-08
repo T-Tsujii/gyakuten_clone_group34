@@ -3,7 +3,18 @@
  *= require_self
  */
 
-@import "bootstrap/scss/bootstrap";
+ @import "bootstrap/scss/bootstrap";
+
+body {
+  padding-top: 56px;
+}
+header {
+  .header-nav {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ページ全体の設定 */
 .base-container {
