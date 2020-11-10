@@ -15,11 +15,15 @@ gem 'devise'
 # 多言語対応化gemを追加
 gem 'devise-i18n'
 gem 'rails-i18n', '~> 6.0'
+# Markdown用のgemを追加
+gem 'redcarpet'
+# シンタックスハイライト
+gem 'coderay'
 
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  
+
   # デバック用のgemを追加
   gem 'pry-byebug'
   gem 'pry-rails'
