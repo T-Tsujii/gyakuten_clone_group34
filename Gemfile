@@ -15,11 +15,19 @@ gem 'webpacker', '~> 4.0'
 # 多言語対応化gemを追加
 gem 'devise-i18n'
 gem 'rails-i18n', '~> 6.0'
+<<<<<<< HEAD
 # 管理者画面
 gem 'activeadmin'
+=======
+# Markdown用のgemを追加
+gem 'redcarpet'
+# シンタックスハイライト
+gem 'coderay'
+
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+>>>>>>> master
 
   # デバック用のgemを追加
   gem 'pry-byebug'

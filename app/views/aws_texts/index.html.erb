@@ -1,0 +1,27 @@
+<section class="main-wrapper">
+  <div class="contents">
+    <h2>AWS講座</h2>
+    <p>注意！！！：AWSのEC2やRDSは有料サービスとなります。無駄な料金を請求されないためにも、不要なインスタンスは停止・削除をしてください。</p>
+  </div>
+  <div class="teaching_material">
+    <table class="table table-striped">
+      <thead class="text-white main-color">
+        <tr>
+          <th>No.</th>
+          <th>内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @aws_texts.each.with_index(1) do |aws_text, index| %>
+          <tr>
+            <th><%= index %></th>
+            <td><%= link_to aws_text.title, aws_text_path(aws_text.id), target: :_blank %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="banner">
+    <img class="course-banner" src="assets/yanbaru_expert.jpg" alt="yanbaru_expertの画像">
+  </div>
+</section>
