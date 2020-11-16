@@ -98,3 +98,10 @@ header {
     }
   }
 }
+
+/* ログイン画面の設定 */
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
