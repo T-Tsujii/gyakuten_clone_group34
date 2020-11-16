@@ -21,6 +21,8 @@ gem 'activeadmin'
 gem 'redcarpet'
 # シンタックスハイライト
 gem 'coderay'
+# bootstrap
+gem 'devise-bootstrap-views'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
