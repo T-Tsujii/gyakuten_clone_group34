@@ -1,5 +1,7 @@
 EMAIL = 'test@example.com'
 PASSWORD = 'password'
+ADMIN_EMAIL = "admin@example.com"
+ADMIN_PASSWORD = "password"
 
 # テストユーザーが存在しないときだけ作成
 User.find_or_create_by!(email: EMAIL) do |user|
@@ -7,14 +9,10 @@ User.find_or_create_by!(email: EMAIL) do |user|
   puts 'ユーザーの初期データインポートに成功しました。'
 end
 
-ADMINEMAIL = 'admin@example.com'
-ADMINPASSWORD = 'password'
-PASSWORDCONFIRMATION = 'password'
 
 # テストユーザーが存在しないときだけ作成
-AdminUser.find_or_create_by!(email: 'admin@example.com') do |adminuser|
+AdminUser.find_or_create_by!(email: ADMIN_EMAIL) do |adminuser|
   adminuser.password = PASSWORD
-  adminuser.password_confirmation = PASSWORDCONFIRMATION
   puts 'ユーザーの初期データインポートに成功しました。'
 end
 
