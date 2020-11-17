@@ -1,5 +1,5 @@
 <% @movies.each do |movie| %>
-  <div>
-    <%= link_to movie.title, movie.url %>
-  </div>
+  <iframe src="<%= movie.url %>">
+    <%= movie %>
+  </iframe>
 <% end %>
