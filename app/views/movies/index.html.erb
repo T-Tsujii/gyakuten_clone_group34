@@ -9,8 +9,8 @@
             </div>
           </div>
           <div class="card-body text-dark movie-body">
-            <p id="watched-movie-1133">
-              <a class="btn btn-primary btn-block" data-remote="true" rel="nofollow" data-method="delete" href="/movies/1133/watched_movies">視聴済みを解除</a>
+            <p>
+              <%= link_to "視聴済みにする", "#", class: "btn btn-primary btn-block" %>
             </p>
             <p class="card-text movie-title">
               <%= movie.title %>
