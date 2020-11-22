@@ -31,10 +31,15 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+
 }
 
 .main-color {
   background-color: #5d99ff !important;
+}
+
+ul.pagination {
+  justify-content: center;
 }
 
 /* banner */
@@ -106,6 +111,10 @@ header {
       margin: 0 auto;
       font-size: 1.5rem;
     }
+  }
+
+  ul.pagination {
+    justify-content: center;
   }
 }
 
