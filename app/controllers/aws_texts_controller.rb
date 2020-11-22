@@ -1,6 +1,6 @@
 class AwsTextsController < ApplicationController
   def index
-    @aws_texts = AwsText.all.page(params[:page])
+    @aws_texts = AwsText.all
   end
 
   def show
