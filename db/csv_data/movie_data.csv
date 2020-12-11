@@ -1,40 +1,31 @@
 genre,title,url
-Basic,人生逆転サロンの活用法,https://www.youtube.com/embed/iFMNUM2Q9mg
-Basic,Slackの使い方,https://www.youtube.com/embed/x_KeaEUr3jo
-Basic,プログラミングを学習するための基礎知識,https://www.youtube.com/embed/Outcx4StSyU
-Git,Gitの基本,https://www.youtube.com/embed/cdz-cs_kYto
-Git,Gitを使ったクローン、プルリク、マージの流れについて解説,https://www.youtube.com/embed/JispFS6zeDw
-Git,ソースコードをリモートリポジトリにプッシュするときの流れ,https://www.youtube.com/embed/FIfbOSy1Bzg
-Ruby,Rubyで使用する主なクラスについて,https://www.youtube.com/embed/BVv2JNnkKfU
-Ruby,putsについて,https://www.youtube.com/embed/TFrYp4J6KLY
-Ruby,変数について,https://www.youtube.com/embed/U3yqlU7HGnk
-Ruby on Rails,Hello World アプリの解説（実践的なコントローラの作り方）,https://www.youtube.com/embed/1jMlnGwHiXo
-Ruby on Rails,resourcesを使わないCRUDアプリの解説,https://www.youtube.com/embed/b_NlIEAQkoo
-Ruby on Rails,resourcesを使ったCRUDアプリの解説,https://www.youtube.com/embed/QWixLhP62M8
-Ruby on Rails,デバッグツールの使い方,https://www.youtube.com/embed/dmkzIosRytI
-Ruby on Rails,CSVデータインポートアプリの解説,https://www.youtube.com/embed/KqOoZQoJTG8
-Ruby on Rails,Rakeタスクの実装,https://www.youtube.com/embed/EntRvD_KSNA
-Ruby on Rails,Deviseを使ったログイン機能の実装,https://www.youtube.com/embed/AIUsm87NyaM
-Talk,高卒・アラサーからプログラマーに転職したあじーさんのインタビュー,https://www.youtube.com/embed/jvSOJvq_kAg
-Talk,36歳携帯販売員からプログラマーに転職した田中さんのインタビュー,https://www.youtube.com/embed/f-MOZRFL1EQ
-Talk,機械学習エンジニアのとみーさん対談,https://www.youtube.com/embed/1H_Bwe1XHcE
-Live,【第1回】Twitterクローンアプリで学ぶアソシエーション勉強会,https://www.youtube.com/embed/mTeCYotISMk
-Live,【第2回】Twitterクローンアプリで学ぶアソシエーション勉強会,https://www.youtube.com/embed/V85-9-6wBtM
-Live,【初心者必見】Rails環境構築中のエラーを一緒に解決してみた,https://www.youtube.com/embed/qZEHjMtsEq0
-Movie,Lesson 0,https://www.youtube.com/embed/wbnxfybxlYU
-Movie,Lesson 1,https://www.youtube.com/embed/u3UTAz97eWg
-Movie,Lesson 2,https://www.youtube.com/embed/v9u0pZoGKww
-Movie,Lesson 3,https://www.youtube.com/embed/QVdaGrIFVdU
-Movie,Lesson 4,https://www.youtube.com/embed/3LZlqVwkOaw
-Movie,Lesson 5,https://www.youtube.com/embed/55TFAqkCCEI
-Php,Lesson 1,https://www.youtube.com/embed/qKy7X5umlqc
-Php,Lesson 2,https://www.youtube.com/embed/tvzdT5_mIv0
-Php,Lesson 3,https://www.youtube.com/embed/ZEh2SIKqkL0
-Php,Lesson 4,https://www.youtube.com/embed/u_oLIlZuLKE
-Writing,Lesson 1,https://www.youtube.com/embed/8WVV-gdtilE
-Writing,Lesson 2,https://www.youtube.com/embed/qhZlO-qa6kk
-Writing,Lesson 3,https://www.youtube.com/embed/H6kHT3iIvdQ
-Marketing,情報発信とは,https://www.youtube.com/embed/Wkorz--0xMo
-Marketing,集客を自動化しよう,https://www.youtube.com/embed/ClTzB1fmYyw
-Money,【怪しくない】堅実に不労所得を得る方法【真っ当なやり方でいけます】,https://www.youtube.com/embed/YppKE806n4w
-Money,稼げるブログ記事の構成,https://www.youtube.com/embed/NIyTB5luw_o
+中田敦彦のYouTube大学,【2025年を制覇する企業②】飲み込まれる業界と必要なスキル,https://www.youtube.com/watch?v=0zqF86HDKkI
+中田敦彦のYouTube大学,【2025年を制覇する企業①】GAFAだけじゃない…世界最先端11社,https://www.youtube.com/watch?v=bE2WbBOm5vY
+中田敦彦のYouTube大学,【アマゾン1人勝ち時代②】アマゾン化する未来で生き残る方法,https://www.youtube.com/watch?v=eu6BjJkubq8
+中田敦彦のYouTube大学,【アマゾン1人勝ち時代①】コロナ後はアマゾンが世界経済を埋め尽くす,https://www.youtube.com/watch?v=C8s9B2zK8pU
+中田敦彦のYouTube大学,【オンラインサロン活用法②】影響力を高めて仕事や生活に活かす方法,https://www.youtube.com/watch?v=h0VoYo41454
+中田敦彦のYouTube大学,【オンラインサロン活用法①】会社・地域・家族とは別のコミュニティで人生が変わる,https://www.youtube.com/watch?v=eY8qvJARm2U
+中田敦彦のYouTube大学,【官邸vs携帯大手②】携帯料金はなぜ下がらないのか？,https://www.youtube.com/watch?v=LVK2vQDF_3A
+中田敦彦のYouTube大学,【官邸vs携帯大手①】菅総理の「四割下げる」発言…値下げを巡る1000日戦争,https://www.youtube.com/watch?v=y8Rw67JxCVs
+中田敦彦のYouTube大学,【ネットフリックスの成功②】2億人の会員をどうして獲得できたのか？,https://www.youtube.com/watch?v=VFW796_9ZK0
+中田敦彦のYouTube大学,【ネットフリックスの成功①】世界一自由な会社の新常識,https://www.youtube.com/watch?v=kb3K0HDloMs
+中田敦彦のYouTube大学,【メイキング of Win Win Wiiin】収録当日の舞台裏とオープニング撮影メイキング,https://www.youtube.com/watch?v=tEvhwPmlTMk
+中田敦彦のYouTube大学,【宮迫×中田】手越祐也（前編）〜ジャニーズ退所の真実！〜【Win Win Wiiin】,https://www.youtube.com/watch?v=vlulMSZqAiA
+中田敦彦のYouTube大学,【約束のネバーランド②】感動の最終話までエクストリーム解説（The Promised Neverland）,https://www.youtube.com/watch?v=0bsCdBwGyIM
+中田敦彦のYouTube大学,【約束のネバーランド①】その楽園から脱獄せよ,https://www.youtube.com/watch?v=A-dC4I0ooBM
+中田敦彦のYouTube大学,【反応しない練習②】競争社会で悩まず生きるための正しい動機とは？,https://www.youtube.com/watch?v=jCaNfSsJim4
+中田敦彦のYouTube大学,【反応しない練習①】あらゆる悩みが消えていくブッダの考え方,https://www.youtube.com/watch?v=ZoUcTFQbo4s
+中田敦彦のYouTube大学,【繊細さんの知恵袋②】自信の持ち方？苦手な人との接し方？SNSの向き合い方？,https://www.youtube.com/watch?v=jyHXoM3ZeDA
+中田敦彦のYouTube大学,【繊細さんの知恵袋①】仕事や人間関係の悩みが軽くなる知恵,https://www.youtube.com/watch?v=0_LAfTTGS_M
+中田敦彦のYouTube大学,【人は話し方が9割②】自己紹介と悩み相談でもう悩まない,https://www.youtube.com/watch?v=DLtXJmX0joE
+中田敦彦のYouTube大学,【人は話し方が9割①】100％好かれる話し方がある,https://www.youtube.com/watch?v=3E2omi55sa0
+中田敦彦のYouTube大学,【ロミオとジュリエット②】2人に襲いかかる悲劇とは？,https://www.youtube.com/watch?v=XG8vAUr1pGQ
+中田敦彦のYouTube大学,【ロミオとジュリエット①】シェイクスピアの恋愛悲劇,https://www.youtube.com/watch?v=7bi6mcsYreQ
+中田敦彦のYouTube大学,【やりたいことの見つけ方②】情熱×才能を仕事の目的で絞る,https://www.youtube.com/watch?v=4KTC2TF2WsY
+中田敦彦のYouTube大学,【やりたいことの見つけ方①】人生のモヤモヤから解放される自己理解メソッド,https://www.youtube.com/watch?v=sk23TqDytzI
+中田敦彦のYouTube大学,【ずるい言葉②】区別ではなく差別を生む言葉を見破ろう,https://www.youtube.com/watch?v=eoLZxV3qXpg
+中田敦彦のYouTube大学,【ずるい言葉①】あなたを閉じこめる言葉を見抜き自分らしく生きていく,https://www.youtube.com/watch?v=xmXVQ_6xl48
+中田敦彦のYouTube大学,【育ちがいい人だけが知っていること②】品がにじみ出る話し方と見た目とは？,https://www.youtube.com/watch?v=mQUKZ4xqdqk
+中田敦彦のYouTube大学,【育ちがいい人だけが知っていること①】育ちの良さは身につけられる,https://www.youtube.com/watch?v=T-9Wg8pzlOY
+中田敦彦のYouTube大学,【マネーマシンの作り方②】投資のスタンダードは分散＆長期保有,https://www.youtube.com/watch?v=JE6YE3F67ok
+中田敦彦のYouTube大学,【マネーマシンの作り方①】株と債券は具体的にどう買えばいいのか？,https://www.youtube.com/watch?v=pm2NKN_sjlA
