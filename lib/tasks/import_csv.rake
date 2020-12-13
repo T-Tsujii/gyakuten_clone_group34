@@ -76,7 +76,7 @@ namespace :import_csv do
 
 
   #text_data
-  desc "line_data.csvをインポートするタスク"
+  desc "text_data.csvをインポートするタスク"
   task text: :environment do
 
     puts "インポート処理を開始！"
@@ -97,5 +97,27 @@ namespace :import_csv do
     end
   end
 
+
+  #question_data
+  desc "question.csvをインポートするタスク"
+  task question: :environment do
+
+    puts "インポート処理を開始！"
+    Question.delete_all
+    list = Import.csv_data(path: "db/csv_data/question_data.csv")
+
+    # インポートできなかった場合
+    begin
+      Movie.create!(list)
+      puts "インポート完了！"
+    rescue => e
+      #例外が発生した時の処理
+      puts "#{e.class}: #{e.message}"
+      puts "-------------------------"
+      puts e.backtrace # 例外が発生した位置情報
+      puts "-------------------------"
+      puts "インポートに失敗"
+    end
+  end 
 
 end
