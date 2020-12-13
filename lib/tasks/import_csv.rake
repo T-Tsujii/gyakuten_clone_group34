@@ -61,7 +61,7 @@ namespace :import_csv do
 
     # インポートできなかった場合
     begin
-      Movie.create!(list)
+      Line.create!(list)
       puts "インポート完了！"
     rescue => e
       #例外が発生した時の処理
@@ -85,7 +85,7 @@ namespace :import_csv do
 
     # インポートできなかった場合
     begin
-      Movie.create!(list)
+      Text.create!(list)
       puts "インポート完了！"
     rescue => e
       #例外が発生した時の処理
@@ -108,7 +108,7 @@ namespace :import_csv do
 
     # インポートできなかった場合
     begin
-      Movie.create!(list)
+      Question.create!(list)
       puts "インポート完了！"
     rescue => e
       #例外が発生した時の処理
