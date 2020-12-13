@@ -2,13 +2,14 @@
 require 'import.rb'
 
 namespace :import_csv do
-  desc "aws_text_data.csvをインポートするタスク"
   
+#aws_tect_date
+  desc "aws_text_data.csvをインポートするタスク"  
   task aws_text: :environment do
-    # import.rbのデータを取得
-    list = Import.csv_data(path: "db/csv_data/aws_text_data.csv")
-
+    
     puts "インポート処理を開始！"
+    list = Import.csv_data(path: "db/csv_data/aws_text_data.csv")
+    AwsText.delete_all
 
     # インポートできなかった場合
     begin
@@ -25,12 +26,14 @@ namespace :import_csv do
   end
 
 
+
+#movie_data
   desc "movie_data.csvをインポートするタスク"
   task movie: :environment do
-    # import.rbのデータを取得
-    list = Import.csv_data(path: "db/csv_data/movie_data.csv")
-
+    
     puts "インポート処理を開始！"
+    Movie.delete_all
+    list = Import.csv_data(path: "db/csv_data/movie_data.csv")
 
     # インポートできなかった場合
     begin
@@ -45,4 +48,9 @@ namespace :import_csv do
       puts "インポートに失敗"
     end
   end
+
+
+
+  #line_date
+  
 end
